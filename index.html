@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdéraman Mahamat Abgoudja - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0f172a via-slate-800 to-slate-900); color: white; line-height: 1.6; }
+        nav { position: sticky; top: 0; z-index: 50; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid rgba(71, 85, 105, 0.3); padding: 1rem 2rem; }
+        nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav h1 { font-size: 1.5rem; background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        nav ul { display: flex; gap: 2rem; list-style: none; }
+        nav a { text-decoration: none; color: white; transition: color 0.3s; }
+        nav a:hover { color: #60a5fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 4rem 2rem; scroll-margin-top: 80px; }
+        .hero { text-align: center; padding: 6rem 2rem; }
+        .hero-avatar { width: 128px; height: 128px; margin: 0 auto 1.5rem; border-radius: 50%; background: linear-gradient(135deg, #60a5fa, #a855f7); padding: 2px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .hero h2 { font-size: 3rem; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        button { background: linear-gradient(to right, #3b82f6, #9333ea); color: white; border: none; padding: 0.75rem 2rem; border-radius: 0.5rem; font-size: 1rem; cursor: pointer; transition: all 0.3s; margin-top: 1rem; }
+        button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+        section.alt { background: rgba(30, 41, 59, 0.5); }
+        h2 { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .card { background: rgba(71, 85, 105, 0.3); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(71, 85, 105, 0.5); transition: all 0.3s; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); border-color: #60a5fa; }
+        .card h3 { color: #60a5fa; margin-bottom: 0.5rem; }
+        .card p { color: #cbd5e1; }
+        .timeline { max-width: 600px; margin: 0 auto; }
+        .timeline-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .timeline-dot { width: 12px; height: 12px; background: #a855f7; border-radius: 50%; margin-top: 0.25rem; flex-shrink: 0; }
+        .timeline-item h3 { color: #a855f7; margin-bottom: 0.25rem; }
+        .timeline-item p { color: #cbd5e1; font-size: 0.9rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .skill-category h3 { color: #60a5fa; margin-bottom: 1rem; }
+        .skill-item { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: #cbd5e1; }
+        .skill-dot { width: 8px; height: 8px; background: #60a5fa; border-radius: 50%; }
+        .language-bar { margin-bottom: 1rem; }
+        .language-bar .label { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .language-bar .bar { width: 100%; height: 8px; background: rgba(71, 85, 105, 0.5); border-radius: 4px; overflow: hidden; }
+        .language-bar .fill { height: 100%; background: linear-gradient(to right, #a855f7, #60a5fa); width: 90%; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .contact-section h3 { color: #60a5fa; margin-bottom: 1rem; }
+        .contact-item { margin-bottom: 1rem; color: #cbd5e1; }
+        .contact-item strong { color: #60a5fa; }
+        footer { background: #0f172a; border-top: 1px solid rgba(71, 85, 105, 0.3); padding: 2rem; text-align: center; color: #94a3b8; }
+        @media (max-width: 768px) { nav ul { gap: 1rem; font-size: 0.9rem; } .hero h2 { font-size: 2rem; } h2 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Abdéraman Mahamat Abgoudja</h1>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-avatar">👨‍💼</div>
+            <h2>Bienvenue</h2>
+            <p>Découvrez le parcours d'Abdéraman Mahamat Abgoudja, biologiste, entrepreneur et leader de jeunesse tchadien engagé dans la participation citoyenne, la gouvernance et le développement de la jeunesse.</p>
+            <p>À travers ses activités politiques, sociales et professionnelles, il œuvre pour la promotion du leadership des jeunes, la participation citoyenne et le développement durable au Tchad et en Afrique.</p>
+            <button onclick="document.getElementById('apropos').scrollIntoView()">En savoir plus</button>
+        </div>
+    </section>
+
+    <section id="apropos" class="alt">
+        <div class="container">
+            <h2>À propos</h2>
+            <div class="grid">
+                <div>
+                    <h3 style="color: #60a5fa; margin-bottom: 1rem;">Qui suis-je ?</h3>
+                    <p>Abdéraman Mahamat Abgoudja est un leader de jeunesse tchadien basé à N'Djamena et originaire d'Ati dans la province du Batha.</p>
+                    <p style="margin-top: 1rem;">Il est connu pour son engagement dans les initiatives politiques, sociales et citoyennes visant à renforcer la participation des jeunes dans les processus de décision.</p>
+                </div>
+                <div>
+                    <h3 style="color: #a855f7; margin-bottom: 1rem;">Mon engagement</h3>
+                    <p>Biologiste de formation et entrepreneur, il s'intéresse également aux innovations numériques, à l'entrepreneuriat et aux initiatives permettant de créer des opportunités pour la jeunesse africaine.</p>
+                    <p style="margin-top: 1rem;">À travers ses engagements, il travaille à promouvoir les valeurs de leadership, de responsabilité civique et de transformation positive de la société.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences">
+        <div class="container">
+            <h2>Expériences Professionnelles</h2>
+            <div class="grid">
+                <div class="card"><h3>PDG de Aïcha Food</h3><p>Gestion d'une entreprise agroalimentaire</p></div>
+                <div class="card"><h3>Junior Sénateur du Tchad</h3><p>Représentation de la jeunesse tchadienne auprès des Nations Unies</p></div>
+                <div class="card"><h3>Coordinateur Provincial</h3><p>Parti Les Transformateurs – Province du Batha</p></div>
+                <div class="card"><h3>Directeur de Campagne Présidentielle</h3><p>Parti Les Transformateurs – Province du Batha</p></div>
+                <div class="card"><h3>Point Focal Provincial</h3><p>Parlement Junior Africain pour les Nations Unies – Province du Batha</p></div>
+            </div>
+
+            <h2 style="margin-top: 3rem;">Formation</h2>
+            <div class="timeline">
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Université des Sciences et des Technologies d'Ati</h3><p>Études universitaires en Biologie</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>University of the People</h3><p>Promotion 2021</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Complexe Scolaire Groupe Toumaï – Lycée/Collège</h3><p>Promotion 2018</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Lycée Privé les Élites de N'Djamena</h3><p>Promotion 2017</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Lycée La Fontaine, N'Djamena</h3><p>Promotion 2016</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Complexe Scolaire Alpha 3 / Lycée Douji Loukar</h3><p>Promotion 2015</p></div></div>
+                <div class="timeline-item"><div class="timeline-dot"></div><div><h3>Lycée Jacques Moudéina de Bongor</h3><p>Promotion 2011</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="alt">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Compétences Professionnelles</h3>
+                    <div class="skill-item"><div class="skill-dot"></div> Leadership et gestion d'équipes</div>
+                    <div class="skill-item"><div class="skill-dot"></div> Communication et mobilisation citoyenne</div>
+                    <div class="skill-item"><div class="skill-dot"></div> Organisation et coordination politique</div>
+                    <div class="skill-item"><div class="skill-dot"></div> Plaidoyer et engagement communautaire</div>
+                    <div class="skill-item"><div class="skill-dot"></div> Entrepreneuriat et initiatives numériques</div>
+                    <div class="skill-item"><div class="skill-dot"></div> Participation citoyenne et gouvernance</div>
+                </div>
+                <div class="skill-category">
+                    <h3>Langues</h3>
+                    <div class="language-bar"><div class="label"><span>Français</span> <span>Natif</span></div><div class="bar"><div class="fill"></div></div></div>
+                    <div class="language-bar"><div class="label"><span>Arabe</span> <span>Courant</span></div><div class="bar"><div class="fill"></div></div></div>
+                    <div class="language-bar"><div class="label"><span>Anglais</span> <span>Courant</span></div><div class="bar"><div class="fill"></div></div></div>
+                    <div class="language-bar"><div class="label"><span>Melbené</span> <span>Natif</span></div><div class="bar"><div class="fill"></div></div></div>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 3rem;">Activités Actuelles</h2>
+            <div class="grid">
+                <div class="card"><p>Engagement dans les initiatives politiques et citoyennes au Tchad</p></div>
+                <div class="card"><p>Mobilisation et encadrement de la jeunesse dans la province du Batha</p></div>
+                <div class="card"><p>Participation à des programmes africains et internationaux liés à la jeunesse</p></div>
+                <div class="card"><p>Développement de projets entrepreneuriaux et numériques</p></div>
+            </div>
+
+            <h2 style="margin-top: 3rem;">Loisirs</h2>
+            <div style="text-align: center;"><div class="card" style="display: inline-block; max-width: 200px;"><p>🎯 Scrabble</p></div></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div>
+                    <h3>Coordonnées</h3>
+                    <div class="contact-item"><strong>Email:</strong> abderamanmhtabgoudja@gmail.com</div>
+                    <div class="contact-item"><strong>Téléphone:</strong><br>+235 63 33 73 39<br>+235 99 46 80 56</div>
+                    <div class="contact-item"><strong>Localisation:</strong> Ati (Batha) – Tchad</div>
+                </div>
+                <div>
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="contact-item"><strong>Facebook:</strong> Abdéraman Mahamat Abgoudja</div>
+                    <div class="contact-item"><strong>X (Twitter):</strong> @prince_djagou</div>
+                    <div class="contact-item"><strong>LinkedIn:</strong> prince_djagou</div>
+                    <div class="contact-item"><strong>Instagram:</strong> @prince_djagou</div>
+                    <div class="contact-item"><strong>Threads:</strong> @prince_djagou</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Abdéraman Mahamat Abgoudja. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
